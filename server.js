@@ -1,7 +1,7 @@
 'use strict';
 
 // Default node environment to development
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 
 var express = require('express'),
     oldSocketio = require('919.socket.io'),
