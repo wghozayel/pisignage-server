@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i></button><a class="navbar-brand" href="http://pisignage.com" target="_self"><img src="app/img/pisignage-logo.png" height="32px"/></a>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i></button><a class="navbar-brand" href="https://www.brickmedia.ca:36936" target="_self"><img src="app/img/brickmedia.png" height="32px"/></a>
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav" style="margin-left:20px;">
@@ -12,9 +12,6 @@
         <li ng-class="getClass('home.license')"><a ui-sref="home.settings" ui-sref-opts="{reload: true}">Settings</a></li>
       </ul>
       <button class="btn btn-link pull-right" ng-click="launchCastApp()" ng-show="castStatus.devicesAvailable"><img class="img-thumbanail" ng-show="castStatus.deviceState == '0'" src="/app/img/ic_cast_black_24dp.png" title="Chromecast devices available, add them to piSignage"/><img class="img-thumbanail" ng-show="castStatus.deviceState != '0'" src="/app/img/ic_cast_connected_black_24dp.png" title="Chromecast device connected"/></button>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://twitter.com/pisignage" target="_blank"><small class="text-info">follow us on&nbsp;<i class="fa fa-twitter-square text-info"></i>&nbsp;for latest updates and tips</small><br/><small class="text-muted">version hash: {{serverConfig.version}}, {{serverConfig.date}}</small></a></li>
-      </ul>
     </div>
   </div>
 </nav>
