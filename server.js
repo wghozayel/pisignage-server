@@ -75,9 +75,9 @@ require('./config/express')(app);
 var server;
 if (config.https) {
     var https_options = {
-        key: fs.readFileSync("./pisignage-server-key.pem"),
-        cert: fs.readFileSync("./pisignage-server-cert.pem"),
-        passphrase: 'pisignage'
+        key: fs.readFileSync("/etc/letsencrypt/live/brickmedia.ca/privkey.pem"),
+        cert: fs.readFileSync("/etc/letsencrypt/live/brickmedia.ca/cert.pem"),
+        // passphrase: 'pisignage'
     };
     server = require('https').createServer(https_options, app);
 }
